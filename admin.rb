@@ -4,7 +4,9 @@ require_relative "seat_manager"
 
 class Admin
   include Report
+ 
   include SeatManager
+
 
   def initialize(cinema, bookings)
     @cinema = cinema
@@ -86,7 +88,10 @@ class Admin
 
     puts "Available seats: #{available_seats(show, @bookings)}"
   end
+
 end
+
+
 
 
 
